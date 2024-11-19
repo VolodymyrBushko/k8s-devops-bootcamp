@@ -1,0 +1,11 @@
+# helm install nginx bitnami/nginx -f values.yaml
+# helm delete nginx
+
+replicaCount: 5
+
+service:
+  type: NodePort
+  port: 80
+  nodePort: 30080
+
+staticSiteConfigmap: nginx-index-config

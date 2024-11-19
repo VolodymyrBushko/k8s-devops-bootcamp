@@ -1,0 +1,8 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: config
+data:
+    DB_URL: jdbc:mysql://mysql-service:3306/mydb
+    MYSQL_DATABASE: mydb
+    DEVOPS: Volodymyr
